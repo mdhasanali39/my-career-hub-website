@@ -3,12 +3,17 @@ import Root from "../Root/Root";
 import Statistics from "../Pages/Statistics/Statistics";
 import AppliedJobs from "../Pages/AppliedJobs/AppliedJobs";
 import Blogs from "../Pages/Blogs/Blogs";
+import Home from "../Pages/Home/Home";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
         children: [
+            {
+                path: '/',
+                element: <Home></Home>
+            },
             {
                 path: '/statistics',
                 element: <Statistics></Statistics>
